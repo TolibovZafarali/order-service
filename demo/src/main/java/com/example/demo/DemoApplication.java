@@ -12,6 +12,12 @@ public class DemoApplication {
 		var orderService = context.getBean(OrderService.class);
 //		var orderService = new OrderService(new PayPalPaymentService());
 		orderService.placeOrder();
+
+//		for (String name : context.getBeanDefinitionNames()) {
+//			System.out.println(name);
+//		}
+//
+//		System.out.println("Total beans: " + context.getBeanDefinitionCount());
 	}
 
 }
